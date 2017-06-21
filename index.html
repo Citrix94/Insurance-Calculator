@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kalkulator Ubezpieczeniowy dla Netins Academy">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Kalkulator Ubezpieczeniowy dla Netins Academy</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+	<body>
+
+	<!-- ############### HEADER BAR ###############-->
+
+	<header class="container">
+		<nav class="row">
+	  	<a class="col-xl-12 header-bar" href="#">
+	  		<span class="company-name-navigation-logo">Netins </span>| Ubezpieczenia
+	  	</a>
+	  </nav>
+	</header>
+
+	<!-- ############### SUM INSURED INPUT ###############-->
+
+	<div class="container border-bottom-line">
+
+		<div class="form-group row sum-insured">
+  		<label for="example-number-input" class="col-xl-12 col-form-label">Podaj wysokość ubezpieczenia:</label>
+ 			<div class="col-xl-7 col-lg-8 col-md-10 col-sm-12">
+   			<input id="insuranceForm" class="form-control sum-insured-input" type="number" name="Insurance Number">
+				<div id="firstYellowBox" class="col-xl-8 col-lg-8 col-md-9 col-sm-10 yellowBox"></div>
+  		</div>
+		</div>
+
+	<!-- ############### TYPE OF PAYMENT INPUTS ###############-->
+
+		<fieldset class="form-group row type-of-payment">
+		<legend class="col-form-legend col-xl-12">Wybierz rodzaj płatności:</legend>
+			<div class="col-xl-7 col-lg-8 col-md-10 col-sm-12 section-inputs">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="gridRadios1" id="firstPaymentInput" value="option1">
+							Płatność jednorazowa - zniżka 2%
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="gridRadios1" id="secondPaymentInput" value="option2">
+							Płatność w 2 ratach
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="gridRadios1" id="thirdPaymentInput" value="option3">
+							Płatność w 4 ratach - zwyżka 4%
+						</label>
+				</div>
+				<div id="secondYellowBox" class="col-xl-8 col-lg-8 col-md-9 col-sm-10 yellowBox"></div>
+			</div>
+		</fieldset>
+
+	<!-- ############### TYPE OF INSURANCE INPUTS ###############-->
+
+		<fieldset class="form-group row type-of-insurance">
+			<legend class="col-form-legend col-xl-12">Wybierz rodzaj ubezpieczenia:</legend>
+				<div class="col-xl-7 col-lg-8 col-md-10 col-sm-12 section-inputs">
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="radio" name="gridRadios2" id="firstInsuranceInput" value="option1">
+								Bezszkodowe ubezpieczenie - zniżka 5%
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="radio" name="gridRadios2" id="secondInsuranceInput" value="option2">
+								Wystąpienie szkody w okresie ubezpieczenia - zwyżka 8%
+							</label>
+					</div>
+
+					<div id="thirdYellowBox" class="col-xl-8 col-lg-8 col-md-9 col-sm-10 yellowBox"></div>
+
+			<!-- ############### BUTTON ###############-->
+
+	  			<button id="mainButton" type="submit" class="btn btn-primary">Oblicz składkę ubezpieczeniową</button>
+
+			<!-- ############### RESULT ###############-->
+
+	    		<div class="result">Wysokość składki wyniesie: <span id="sum">0</span> zł.</div>
+	  		</div> 
+		</fieldset>	
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
